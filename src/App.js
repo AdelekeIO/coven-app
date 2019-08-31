@@ -6,6 +6,9 @@ import Login from './Components/Login'
 import Header from './Components/Header'
 import axios from 'axios';
 import Cities from './Components/Cities'
+import Examples from './Components/Examples'
+import Modal from 'react-bootstrap/Modal'
+import {Button} from 'react-bootstrap'
 
 
 
@@ -30,15 +33,18 @@ import Cities from './Components/Cities'
   
     
     return (
-      <div id="root">
-           
+      
+        
+      <div id="root" style={{minWidth:'100%'}}>
+
+           {/* <Examples/> */}
       <Router>
 <Route  path="/dashboard" render={props =>(
     <React.Fragment>
-    <div className="App" >
+    <div className="App"  style={{width:'100%'}}>
         <Header />
-        <div className="row koko col-lg-12 border d-inline-flex p-2 p-5"style={{height:'50em',display:'flex'}}>
-        <Cities/>
+        <div className="row koko col-lg-12 border "style={{height:'auto',width:'100%',display:'flex', marginLeft:'auto',marginRight:'auto',textAlign:'center',paddingLeft: '120pt'}}>
+        <Cities style={{marginLeft:'auto',marginRight:'auto',textAlign:'center'}}/>
         </div>
        
     </div>

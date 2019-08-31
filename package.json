@@ -49,6 +49,8 @@
     "postcss-safe-parser": "4.0.1",
     "react": "^16.9.0",
     "react-app-polyfill": "^1.0.2",
+    "react-awesome-modal": "^2.0.5",
+    "react-bootstrap": "^1.0.0-beta.12",
     "react-dev-utils": "^9.0.3",
     "react-dom": "^16.9.0",
     "react-router": "^5.0.1",
@@ -64,12 +66,15 @@
     "webpack": "4.39.1",
     "webpack-dev-server": "3.2.1",
     "webpack-manifest-plugin": "2.0.4",
-    "workbox-webpack-plugin": "4.3.1"
+    "workbox-webpack-plugin": "4.3.1" 
+
   },
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "deploy": "gh-pages -d build",
+    "homepage" : "http://adelekeio.github.io/coven-app"
   },
   "eslintConfig": {
     "extends": "react-app"

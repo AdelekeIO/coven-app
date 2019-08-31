@@ -32,7 +32,7 @@ onChange = (e)=>{
 }
     render() {
         return (
-            <div>
+            <div className='login'>
                   <div>
         <div className="login-page">
   <div className="form">

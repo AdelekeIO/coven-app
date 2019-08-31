@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 
 
  class CityItem extends Component {
+
+    launchModal=(e)=> {
+        alert('Modal');
+    }
     render() {
         console.log(this.props.city);
         let city =this.props.city;
@@ -15,8 +19,8 @@ import React, { Component } from 'react'
                         </div>
                     <figcaption>
                         <h3>{city}</h3>
-                        <p>If you do the job badly enough, sometimes you don't get asked to do it again. </p>
-                        <input type="button" className="btn btn-success" value="View Details" data-toggle="modal" data-target="#exampleModal"/>
+                        <p>The Journey of a thousand miles starts in a day. </p>
+                        <input type="button" className="btn btn-success" onClick={this.launchModal} value="View Details" data-toggle="modal" data-target="#exampleModal"/>
                     </figcaption>
                     
                     {/* <div className="price">
